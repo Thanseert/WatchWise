@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Image Grid</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-card img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-overlay:hover {
+            opacity: 1;
+        }
+
+        .image-overlay-content {
+            text-align: center;
+        }
+
+        .image-overlay h3 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .image-overlay p {
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FAN FAVORITES</h1>
+
+        <div class="image-grid">
+            <div class="image-card">
+                <a href="/movie/1">
+                    <img src="https://www.hollywoodreporter.com/wp-content/uploads/2014/09/interstellar_poster_0.jpg?w=2000&h=1126&crop=1" alt="Image 1">
+                    <div class="image-overlay">
+                        <div class="image-overlay-content">
+                            <h3>Interstellar</h3>
+                            <p>When Earth becomes......</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="image-card">
+                <a href="/movie/2">
+                    <img src="https://images.indianexpress.com/2021/12/The-Railway-men-YRF-Entertainment.jpg" alt="Image 2">
+                    <div class="image-overlay">
+                        <div class="image-overlay-content">
+                            <h3>The Railway Men</h3>
+                            <p>A former British Army.....</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="image-card">
+                <a href="/movie/3">
+                    <img src="https://if.com.au/wp-content/uploads/2019/08/the-matrix-reloaded.jpg" alt="Image 3">
+                    <div class="image-overlay">
+                        <div class="image-overlay-content">
+                            <h3>The Matrix</h3>
+                            <p>Thomas Anderson.....</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="image-card">
+                <a href="/movie/4">
+                    <img src="https://1000logos.net/wp-content/uploads/2021/10/Batman-Logo.png" alt="Image 2">
+                    <div class="image-overlay">
+                        <div class="image-overlay-content">
+                            <h3>Batman</h3>
+                            <p>Batman is a superhero.....</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="image-card">
+                <a href="/movie/5">
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/26677df38123a3a1553d704477c100af81b641e1d539bc1991f99f89935f18b0._UY500_UX667_RI_TTW_.jpg" alt="Image 2">
+                    <div class="image-overlay">
+                        <div class="image-overlay-content">
+                            <h3>Inception</h3>
+                            <p>A thief who steals.....</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="image-card">
+                <a href="/movie/6">
+                    <img src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/09/12/Pictures/_692132da-d561-11e9-98d7-43b78744c7ea.jpg" alt="">
+                    <div class="image-overlay">
+                        <div class="image-overlay-content">
+                            <h3>Joker</h3>
+                            <p>Arthur Fleck, a party clown, leads an impoverished life with his ailing mother. However, when society shuns him and brands him as a freak, he decides to embrace the life of crime and chaos</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

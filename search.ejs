@@ -1,0 +1,95 @@
+<!-- Add the search form to your view -->
+<!-- <form action="/search" method="post">
+    <input type="text" name="q" placeholder="Search for a movie">
+    <button type="submit">Search</button>
+</form>
+   -->
+   <section class="search-section">
+    <div class="container">
+      <h1>Search for a Movie</h1>
+      <form action="/search" method="post" class="search-form">
+        <input type="text" name="q" placeholder="Enter a movie title" class="search-input">
+        <button type="submit" class="search-button">Search</button>
+      </form>
+      <a href="/home" class="home-button">Back to Home Page</a>
+    </div>
+  </section>
+
+  <style>
+    .search-section {
+    background-color: #141414;
+    padding: 120px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .search-input {
+    width: 400px;
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #333;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-input::placeholder {
+    color: #666;
+  }
+  
+  .search-button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin-left: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-button:hover {
+    background-color: #b2070e;
+  }
+
+.home-button {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+  
+  </style>
+  

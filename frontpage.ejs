@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Login or Sign Up</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 100px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .title {
+            font-size: 36px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #333333;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #666666;
+        }
+        
+        .btn-option {
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .btn-option:hover {
+            background-color: #cc0000;
+            color: #ffffff;
+        }
+        
+        .btn-primary {
+            background-color: #cc0000;
+            border-color: #cc0000;
+        }
+        
+        .btn-primary:hover {
+            background-color: #990000;
+            border-color: #990000;
+        }
+        
+        .btn-secondary {
+            background-color: #ffffff;
+            border-color: #ced4da;
+            color: #333333;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #e2e6ea;
+            border-color: #c6cbd1;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Welcome to WatchWise</h1>
+        <p class="subtitle">Please select an option:</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <button class="btn btn-primary btn-option" onclick="location.href='/login'">Login</button>
+                <button class="btn btn-secondary btn-option" onclick="location.href='/signup'">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top picks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+
+        .search-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            width: 400px;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: #f15454;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #d64141;
+        }
+
+        .listings {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .listing-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .listing-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .listing-card h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .listing-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .listing-card button {
+            padding: 8px 16px;
+            background-color: #f15454;
+            color: #fff;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .listing-card button:hover {
+            background-color: #d64141;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Today's Top Picks</h1>
+        </div>
+
+        <div class="listings">
+            <div class="listing-card">
+                <img src="https://images.indianexpress.com/2021/12/The-Railway-men-YRF-Entertainment.jpg" alt="The Railway Man">
+                <h3>The Railway Man</h3>
+                <p>A former British Army.....</p>
+                <button onclick="window.location.href='/search'">View Details</button>
+            </div>
+
+            <div class="listing-card">
+                <img src="https://www.hollywoodreporter.com/wp-content/uploads/2014/09/interstellar_poster_0.jpg?w=2000&h=1126&crop=1" alt="Listing 2">
+                <h3>Interstellar</h3>
+                <p>When Earth becomes...</p>
+                <button onclick="window.location.href='/search'">View Details</button>
+            </div>
+
+            <div class="listing-card">
+                <img src="https://cdn.theatlantic.com/thumbor/utCGRSJPEy23uD8ZWpuffNTjf_w=/0x0:4800x2700/1600x900/media/img/mt/2023/04/succession_ep_6_hr/original.jpg" alt="Listing 3">
+                <h3>succession</h3>
+                <p>The Roy family is...</p>
+                <button onclick="window.location.href='/search'">View Details</button>
+            </div>
+            <div class="listing-card">
+                <img src="https://if.com.au/wp-content/uploads/2019/08/the-matrix-reloaded.jpg" alt="Listing 3">
+                <h3>The Matrix</h3>
+                <p>Thomas Anderson a....</p>
+                <button onclick="window.location.href='/search'">View Details</button>
+            </div>
+            <div class="listing-card">
+                <img src="https://1000logos.net/wp-content/uploads/2021/10/Batman-Logo.png" alt="Listing 3">
+                <h3>Batman</h3>
+                <p>Batman is a....</p>
+                <button onclick="window.location.href='/search'">View Details</button>
+            </div>
+            <div class="listing-card">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/26677df38123a3a1553d704477c100af81b641e1d539bc1991f99f89935f18b0._UY500_UX667_RI_TTW_.jpg" alt="Listing 3">
+                <h3>Inception</h3>
+                <p>A thief who......</p>
+                <button onclick="window.location.href='/search'">View Details</button>
+            </div>
+
+            <!-- Add more listing cards as needed -->
+
+        </div>
+    </div>
+</body>
+</html>
